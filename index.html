@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css" />
+    <title>Jam Tutor</title>
+  </head>
+  <body>
+    <header>
+      <div class="w3-bar w3-top">
+        <a href="#home" class="w3-bar-item w3-btn w3-mobile">Home</a>
+        <a href="#about" class="w3-bar-item w3-btn w3-mobile">About</a>
+        <a href="#pricing" class="w3-bar-item w3-btn w3-mobile">Pricing</a>
+        <a href="#signup" class="w3-bar-item w3-btn w3-mobile">Sign up</a>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="w3-container">
+        <div>
+          <p>Need to supplement your learning?</p>
+          <h1>Try Jam Tutor</h1>
+          <button class="w3-btn">Find a Tutor</button>
+        </div>
+      </section>
+      <section id="about" class="w3-container">
+        <h2>About Jam Tutor</h2>
+        <p>
+          Our mission is simple. We want to prepare you for the opportunities
+          that lie ahead. How do we achieve this? We believe in learning by
+          doing, talk is cheap.
+        </p>
+        <p>
+          Jam Tutor has always been a remote first organization, leveraging
+          technology to connect students and tutors. As a result, in our own
+          little way, we are minimizing vehicle traffic on the roads.
+        </p>
+      </section>
+      <section id="pricing" class="w3-container">
+        <h2>Pricing</h2>
+        <p>Our pricing model is simpler than your math homework.</p>
+        <div class="w3-cell-row">
+          <div class="w3-container w3-cell w3-mobile">
+            <p>High School</p>
+            <p>$25/hr</p>
+          </div>
+          <div class="w3-container w3-cell w3-mobile">
+            <p>University</p>
+            <p>$30/hr</p>
+          </div>
+          <div class="w3-container w3-cell w3-mobile">
+            <p>Standardized Tests</p>
+            <p>$40/hr</p>
+          </div>
+        </div>
+      </section>
+      <section id="signup">
+        <div class="w3-container">
+          <h2>Sign Up</h2>
+          <p>Let us help you navigate your learning journey.</p>
+        </div>
+
+        <form class="w3-container">
+          <label class="w3-text">First Name</label>
+          <input required class="w3-input w3-border" type="text" />
+
+          <label class="w3-text">Last Name</label>
+          <input required class="w3-input w3-border" type="text" />
+
+          <label class="w3-text">Email</label>
+          <input
+            required
+            class="w3-input w3-border"
+            name="email"
+            type="email"
+            placeholder="name@example.com"
+          />
+
+          <label class="w3-text">Phone Number</label>
+          <input
+            required
+            class="w3-input w3-border"
+            name="phone"
+            type="tel"
+            placeholder="###-###-####"
+          />
+
+          <select class="w3-select" name="option">
+            <option required value="" disabled selected>
+              Education level/type
+            </option>
+            <option value="HSCH">High School</option>
+            <option value="UNIV">University</option>
+            <option value="TEST">Standardized Test</option>
+          </select>
+
+          <div id="courseChoice"></div>
+
+          <label class="w3-text">More info on what you need help with</label>
+          <input
+            class="w3-input w3-border"
+            name="message"
+            type="text"
+            placeholder="Enter your message here"
+          />
+
+          <button class="w3-btn">Sign Up</button>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
