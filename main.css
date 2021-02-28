@@ -1,11 +1,78 @@
-body,
-html {
-  height: 100%;
+:root {
+  --dk-col: #212529;
+  --lt-col: whitesmoke;
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dk-col);
+  color: var(--lt-col);
+}
+
+.nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--dk-col);
+  top: 0;
+}
+
+.nav a {
+  color: var(--lt-col);
+  padding: 10px;
+  text-decoration: none;
+  font-size: large;
+}
+
+#main {
+  grid-template-rows: 100vh auto auto auto;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
 }
 
 .bgimg {
   min-height: 100%;
-  background-image: url("/img/scott-graham-5fNmWej4tAA-unsplash.jpg");
+  background-image: linear-gradient(
+      45deg,
+      rgba(33, 37, 41, 0.5),
+      rgba(33, 37, 41, 1)
+    ),
+    url("/img/scott-graham-5fNmWej4tAA-unsplash.jpg");
   background-position: center;
   background-size: cover;
+}
+
+#button {
+  color: var(--lt-col);
+  background-color: var(--dk-col);
+  border-color: var(--dk-col);
+}
+
+#button:hover {
+  color: var(--dk-col);
+  background-color: var(--lt-col);
+  border-color: var(--dk-col);
+}
+
+#altButton {
+  color: var(--dk-col);
+  background-color: var(--lt-col);
+  border-color: var(--lt-col);
+}
+
+#altButton:hover {
+  color: var(--lt-col);
+  background-color: var(--dk-col);
+  border-color: var(--lt-col);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  margin: auto;
 }

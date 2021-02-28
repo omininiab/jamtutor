@@ -4,39 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link
+      rel="icon"
+      href="img/favicon.png"
+      sizes="16x16 32x32"
+      type="image/png"
+    />
     <title>Jam Tutor</title>
   </head>
+
   <body>
-    <header class="w3-hide-small w3-top">
-      <div class="w3-bar w3-center">
-        <a href="#home" class="w3-bar-item w3-btn w3-mobile">Home</a>
-        <a href="#about" class="w3-bar-item w3-btn w3-mobile">About</a>
-        <a href="#pricing" class="w3-bar-item w3-btn w3-mobile">Pricing</a>
-        <a href="#signup" class="w3-bar-item w3-btn w3-mobile">Sign up</a>
+    <header id="header" class="w3-hide-small w3-top">
+      <div class="nav">
+        <a href="#home" class="w3-btn w3-mobile">Home</a>
+        <a href="#about" class="w3-btn w3-mobile">About</a>
+        <a href="#pricing" class="w3-btn w3-mobile">Pricing</a>
+        <a href="#signup" class="w3-btn w3-mobile">Sign up</a>
       </div>
     </header>
-    <main>
+
+    <main id="main">
       <section id="home" class="w3-display-container w3-wide bgimg">
-        <div class="w3-display-middle w3-text-white w3-center">
+        <div class="w3-display-middle w3-center">
           <p>Need to supplement your learning?</p>
           <h1 class="w3-jumbo">Try Jam Tutor</h1>
-          <button class="w3-btn">Find a Tutor</button>
+          <button id="button" class="w3-btn">Find a Tutor</button>
         </div>
       </section>
+
       <section id="about" class="w3-container">
-        <h2>About Jam Tutor</h2>
-        <p>
-          Our mission is simple. We want to prepare you for the opportunities
-          that lie ahead. How do we achieve this? We believe in learning by
-          doing, talk is cheap.
-        </p>
-        <p>
-          Jam Tutor has always been a remote first organization, leveraging
-          technology to connect students and tutors. As a result, in our own
-          little way, we are minimizing vehicle traffic on the roads.
-        </p>
+        <div>
+          <h2>About Jam Tutor</h2>
+          <p>
+            Our mission is simple. We want to prepare you for the opportunities
+            that lie ahead. How do we achieve this? We believe in learning by
+            doing, talk is cheap.
+          </p>
+          <p>
+            Jam Tutor has always been a remote first organization, leveraging
+            technology to connect students and tutors. As a result, in our own
+            little way, we are minimizing vehicle traffic on the roads.
+          </p>
+        </div>
       </section>
+
       <section id="pricing" class="w3-container">
         <h2>Pricing</h2>
         <p>Our pricing model is simpler than your math homework.</p>
@@ -55,13 +77,14 @@
           </div>
         </div>
       </section>
-      <section id="signup">
-        <div class="w3-container">
+
+      <section id="signup" class="w3-container">
+        <div>
           <h2>Sign Up</h2>
           <p>Let us help you navigate your learning journey.</p>
         </div>
 
-        <form class="w3-container">
+        <form>
           <label class="w3-text">First Name</label>
           <input required class="w3-input w3-border" type="text" />
 
@@ -105,10 +128,11 @@
             placeholder="Enter your message here"
           />
 
-          <button class="w3-btn">Sign Up</button>
+          <button id="altButton" class="w3-btn">Sign Up</button>
         </form>
       </section>
     </main>
-    <footer></footer>
+
+    <footer id="footer"></footer>
   </body>
 </html>
