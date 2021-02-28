@@ -1,0 +1,11 @@
+body,
+html {
+  height: 100%;
+}
+
+.bgimg {
+  min-height: 100%;
+  background-image: url("/img/scott-graham-5fNmWej4tAA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
