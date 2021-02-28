@@ -1,10 +1,14 @@
 :root {
   --dk-col: #212529;
   --lt-col: whitesmoke;
-  font-size: 100%;
-  font-family: "Poppins", sans-serif;
   background-color: var(--dk-col);
   color: var(--lt-col);
+}
+
+html,
+body {
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav {
@@ -26,7 +30,7 @@
 }
 
 #main {
-  grid-template-rows: 100vh auto auto auto;
+  grid-template-rows: 100vh auto auto minmax(100vh, auto);
   width: 100vw;
   display: grid;
   justify-content: center;
@@ -71,8 +75,16 @@
 .section {
   display: flex;
   flex-direction: column;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding-top: 5%;
+}
+
+#signupForm {
   margin: auto;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 }
