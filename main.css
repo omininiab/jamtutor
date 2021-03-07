@@ -43,7 +43,7 @@ body {
       rgba(33, 37, 41, 0.5),
       rgba(33, 37, 41, 1)
     ),
-    url("/img/scott-graham-5fNmWej4tAA-unsplash.jpg");
+    url("img/scott-graham-5fNmWej4tAA-unsplash.jpg");
   background-position: center;
   background-size: cover;
 }
