@@ -12,6 +12,7 @@ body {
 }
 
 .nav {
+  background-color: var(--dk-col);
   position: fixed;
   width: 100vw;
   display: flex;
@@ -29,10 +30,7 @@ body {
 }
 
 #main {
-  grid-template-rows: 100vh minmax(100vh, auto) minmax(100vh, auto) minmax(
-      100vh,
-      auto
-    );
+  grid-template-rows: 100vh auto minmax(100vh, auto);
   width: 100vw;
   display: grid;
   justify-content: center;
@@ -75,7 +73,6 @@ body {
 }
 
 #about,
-#pricing,
 #signup {
   display: flex;
   flex-direction: column;
@@ -83,6 +80,14 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5%;
+}
+
+#pricingCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 5px;
 }
 
 #signupForm {
@@ -95,6 +100,6 @@ body {
 
 @media (max-width: 750px) {
   #main {
-    grid-template-rows: 100vh auto auto auto;
+    grid-template-rows: 100vh auto auto;
   }
 }
