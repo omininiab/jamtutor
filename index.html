@@ -38,10 +38,11 @@
         <div class="w3-display-middle w3-center">
           <h1>Try Jam Tutor</h1>
           <p>SUPPLEMENT YOUR LEARNING</p>
-          <a id="button" class="w3-btn" href="#signup">Find a Tutor</a>
+          <a id="button" class="w3-btn" href="#signup">FIND TUTOR</a>
         </div>
       </section>
       <hr />
+
       <section id="about" class="w3-container">
         <div>
           <h2>About Jam Tutor</h2>
@@ -104,6 +105,7 @@
         </div>
       </section>
 
+      <hr>
       <section id="signup" class="w3-container">
         <form id="signupForm">
           <div>
@@ -140,8 +142,7 @@
           </div>
           <div>
             <label class="w3-text">Phone Number</label>
-            <input
-              required
+            <input              required
               class="w3-input w3-border"
               name="phone"
               type="tel"
@@ -149,17 +150,23 @@
             />
           </div>
           <div>
-            <select class="w3-select" name="option">
-              <option required value="" disabled selected>
+            <label class="w3-text">Education Level</label>
+            <select class="w3-select" id="edLevel" name="option">
+              <option required id="none" value="NONE" selected disabled>
                 Education level/type
               </option>
-              <option value="HSCH">High School</option>
-              <option value="UNIV">University</option>
-              <option value="TEST">Standardized Test</option>
+              <option id="hsch" value="HSCH">High School</option>
+              <option id="univ" value="UNIV">University</option>
+              <option id="test" value="TEST">Standardized Test</option>
             </select>
           </div>
 
-          <div id="courseChoice"></div>
+          <div>
+          <label class="w3-text">Course</label>
+          <select class="w3-select" id="courseChoice" name="courseChoice">
+
+          </select>
+        </div>
 
           <div>
             <label class="w3-text">More info on what you need help with</label>
@@ -189,5 +196,6 @@
         >
       </p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
