@@ -32,3 +32,19 @@ univ.onclick = function () { showCourses() };
 
 test = document.getElementById("test");
 test.onclick = function () { showCourses() };
+
+function handleFormSubmit(event) {
+    event.preventDefault();
+
+    const data = new FormData(event.target);
+
+    const formJSON = Object.fromEntries(data.entries());
+
+    // for multi-selects, we need special handling
+    formJSON.snacks = data.getAll('snacks');
+
+    results = JSON.stringify(formJSON, null, 2);
+}
+
+const form = document.querySelector('#signup');
+form.addEventListener('submit', handleFormSubmit);
